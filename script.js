@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmDeleteButton = document.getElementById('confirm-delete');
     let selectedActivity;
 
-    const correctPassword = '1234'; // Ganti dengan kata sandi yang Anda inginkan
+    const correctPassword = 'SalsaloveToni'; // Ganti dengan kata sandi yang Anda inginkan
 
     // Load saved activities from LocalStorage
     loadActivities();
