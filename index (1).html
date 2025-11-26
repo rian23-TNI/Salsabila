@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV Responsive - Salsabila</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+/* ===========================
+   MOBILE FIRST BASE STYLE
+   =========================== */
+
+:root {
+  --dark: #3f4246;
+  --accent: #e8e3dd;
+  --peach: #e8c7a4;
+  --muted: #7d7d7d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Nunito, sans-serif;
+  background: #f7f6f4;
+  color: var(--dark);
+}
+
+/* WRAPPER */
+.cv {
+  max-width: 900px;
+  margin: 16px auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER (MOBILE = CENTER) */
+.cv-header {
+  text-align: center;
+  padding: 24px;
+  background: #3f4246;
+  color: white;
+}
+
+.photo {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+  margin-bottom: 14px;
+}
+
+.name {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: Montserrat, sans-serif;
+}
+
+.subtitle {
+  margin-top: 6px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: .85;
+}
+
+.contact {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.contact div {
+  margin-bottom: 6px;
+}
+
+/* BODY SECTION */
+.section {
+  padding: 22px;
+  border-bottom: 1px solid #eee;
+}
+   
+li.indent {
+   text-indent: 20px;
+} 
+
+.social-container {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.social-container .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Warna tiap icon */
+.email { background: #ff7b00; }
+.instagram { background: #d6249f; }
+.whatsapp { background: #25D366; }
+.tiktok { background: #000; }
+
+/* Efek hover */
+.icon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+   
+.section-title {
+  display: inline-block;
+  background: var(--accent);
+  padding: 7px 14px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 14px;
+}
+
+/* PERSONAL DATA LIST */
+.data-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.data-list li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.data-label {
+  font-weight: 600;
+  color: var(--muted);
+  display: block;
+}
+
+/* LIST */
+ul.clean {
+  margin: 0;
+  padding-left: 18px;
+}
+
+/* SKILL BAR */
+.skill {
+  margin-bottom: 16px;
+}
+
+.skill-name {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: var(--peach);
+  border-radius: 10px;
+}
+
+/* FOOTER */
+.footer {
+  background: #2c2c2c;
+  height: 16px;
+}
+
+
+/* ===========================
+   RESPONSIVE DESKTOP
+   =========================== */
+
+@media (min-width: 700px) {
+
+  /* Header berubah ke layout kiri-kanan */
+  .cv-header {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 24px;
+    padding: 32px;
+  }
+
+  .photo {
+    margin: 0;
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Body menjadi 2 kolom */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="cv">
+
+  <!-- HEADER -->
+  <header class="cv-header">
+    <img src="SALSABILA NURPATHIN.jpg" class="photo">
+
+    <div>
+      <h1 class="name">Salsabila Nurpathin</h1>
+      <p class="subtitle">LULUSAN BARU</p>
+
+      <div class="contact">
+        <div>Email: salsabilanp317@gmail.com</div>
+        <div>Telp: 0851-7229-8817</div>
+        <div>Alamat: Klari, Karawang Timur</div>
+        <div>Website: rian23-tni.github.io/Salsabila</div>
+      </div>
+    </div>
+  </header>
+
+   <!-- PROFILE -->
+     <section class="section">
+    <div class="section-title">Profile</div>
+
+    <ul class="data-list">
+      <li class="indent">Nama saya Salsabila Nurpathin, berpengalaman sebagai Operator di PT Sankosha Karawang Timur. Saya pribadi disiplin, cepat belajar, dan mampu bekerja rapi sesuai target. Dengan pendidikan SMA/MA Madrasah Aliyah, saya siap berkontribusi di perusahaan Bapak/Ibu. Jika berkenan, Bapak/Ibu dapat menghubungi saya untuk informasi lebih lanjut.”</li>
+      <p>Karawang, 31 Juli 2007</p>
+      <li>Dusun krajan, RT.003/002, Ds. Gintungkerta, Klari, Jawa Barat</li>
+      <li>Hub. Di bawah ini! </li>
+ 
+    </ul>
+        <div class="social-container">
+           <a href="mailto:salsabilan317@gmail.com" class="icon email"><i class="fa-solid fa-envelope"></i></a>
+           <a href="https://instagram.com/@brian_tio23" class="icon instagram"><i class="fa-brands fa-instagram"></i></a>
+           <a href="https://wa.me/+628815803490?text=bi%20aca%20mau%20nikah%20☺%20hehehe" " class="icon whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+           <a href="https://www.tiktok.com/@brian_tio23" class="icon tiktok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+  </section>
+
+  <!-- DATA PRIBADI -->
+  <section class="section">
+    <div class="section-title">Data Pribadi</div>
+
+    <ul class="data-list">
+      <li><span class="data-label">Nama</span>Salsabila Nurpathin</li>
+      <li><span class="data-label">Tempat/Tanggal Lahir</span>Karawang, 31 Juli 2007</li>
+      <li><span class="data-label">Alamat</span>Dusun krajan, RT.003/002, Ds. Gintungkerta, Klari, Jawa Barat</li>
+      <li><span class="data-label">Jenis Kelamin</span>Perempuan</li>
+      <li><span class="data-label">Kewarganegaraan</span>Indonesia</li>
+      <li><span class="data-label">Status</span>Belum Menikah</li>
+    </ul>
+  </section>
+
+  <!-- 2 KOLUM RESPONSIVE -->
+  <section class="section grid-2">
+
+    <!-- LEFT SIDE -->
+    <div>
+
+      <div class="section-title">Pendidikan</div>
+      <ul class="clean">
+        <li>SD: Anggadita III</li>
+        <li>SMP: AL-BADAR CIPULUS</li>
+        <li>SMA/MA: YPPA CIPULUS</li>
+      </ul>
+
+      <br>
+
+      <div class="section-title">Kemampuan</div>
+      <div class="skill">
+        <div class="skill-name">Komunikasi</div>
+        <div class="skill-bar"><span style="width:85%"></span></div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Manajemen Waktu</div>
+        <div class="skill-bar"><span style="width:78%"></span></div>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div>
+
+      <div class="section-title">Pengalaman</div>
+      <ul class="clean">
+        <li>PT. Sankosha – Operator Produksi</li>
+      </ul>
+
+      <br>
+
+      <div class="section-title">Hobi</div>
+      <ul class="clean">
+        <li>Membaca</li>
+        <li>Menulis</li>
+        <li>Menggambar Kaligrafi</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER STRIP -->
+  <div class="footer"></div>
+
+</div>
+
+</body>
+</html>
